@@ -31,11 +31,11 @@ const Wrapper = styled.div `
     align-items: center;
     margin-bottom: 0.5rem;
     flex-wrap: wrap;
-    gap: 0 0.5rem;
 
     .stars {
         color: #ffb900;
         font-size: 1rem;
+        margin-right: 0.5rem;
     }
 
     span {

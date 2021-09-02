@@ -201,13 +201,13 @@ const Wrapper = styled.article `
     .colors-filter {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
         align-items: center;
     }
 
     .all-button {
         display: inline-block;
         margin: 0;
+        margin-right: 0.5rem;
     }
 
     .color-button {
@@ -221,6 +221,8 @@ const Wrapper = styled.article `
         place-items: center;
         opacity: 0.5;
         font-size: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .color-button.active {
@@ -230,12 +232,12 @@ const Wrapper = styled.article `
     .shipping {
         display: flex;
         flex-wrap: wrap;
-        grid-gap: 0.5rem;
         align-items: center;
     }
 
     label {
         font-size: 1rem;
+        margin-right: 0.5rem;
     }
 
     .clear-button {
@@ -245,6 +247,10 @@ const Wrapper = styled.article `
         color: white;
         padding: 0.25rem 0.5rem;
         letter-spacing: var(--letter-spacing);
+    }
+
+    option {
+        text-transform: capitalize;
     }
 
     @media all and (max-width: 600px) {

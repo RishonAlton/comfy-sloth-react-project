@@ -27,6 +27,8 @@ const CheckoutForm = () => {
     const stripe = useStripe()
     const elements = useElements()
 
+    const name = currentUser && currentUser.name
+
     const cardStyle = {
         style: {
             base: {
@@ -46,7 +48,7 @@ const CheckoutForm = () => {
     }
 
     const createPaymentIntent = async () => {
-        const { data } = await axios.post("/.netlify/functions/create-payment-intent", JSON.stringify({ cart, shippingFee, totalAmount }))
+        const { data } = await axios.post("/.netlify/functions/create-payment-intent", JSON.stringify({ cart, shippingFee, totalAmount, name }))
         setClientSecret(data.clientSecret)
     }
 
@@ -94,7 +96,7 @@ const CheckoutForm = () => {
                     </div>
                 ) : (
                     <div>
-                        <h4>Hello, {currentUser && currentUser.name}</h4>
+                        <h4>Hello, {name}</h4>
                         <p>Your Total is {formatPrice(totalAmount)}</p>
                         <p>Test Card Number: 4242 4242 4242 4242</p>
                     </div>

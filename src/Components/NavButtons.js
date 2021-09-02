@@ -53,7 +53,7 @@ const Wrapper = styled.div `
 
     align-items: center;
     display: flex;
-    gap: 3rem;
+    /* gap: 3rem; */
     justify-content: center;
 
     .cart-button {
@@ -62,6 +62,7 @@ const Wrapper = styled.div `
         color: var(--gray-700);
         display: grid;
         place-items: center;
+        margin-right: 3rem;
     }
 
     .cart-amount {

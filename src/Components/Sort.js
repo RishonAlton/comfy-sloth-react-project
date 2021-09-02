@@ -59,7 +59,6 @@ const Wrapper = styled.div `
 
     .buttons-container {
         display: flex;
-        gap: 0.5rem;
     }
 
     button {
@@ -72,6 +71,7 @@ const Wrapper = styled.div `
         background: transparent;
         border: 1px solid var(--black);
         border-radius: var(--border-radius);
+        margin-right: 0.5rem;
     }
 
     .active {
@@ -85,7 +85,6 @@ const Wrapper = styled.div `
 
     .sort {
         display: flex;
-        gap: 0.5rem;
     }
 
     select {
@@ -93,6 +92,7 @@ const Wrapper = styled.div `
         outline: none;
         color: var(--gray-800);
         font-size: 1rem;
+        margin-left: 0.5rem;
     }
 
     @media all and (max-width: 900px) {
