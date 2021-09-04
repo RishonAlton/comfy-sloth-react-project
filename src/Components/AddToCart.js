@@ -91,7 +91,6 @@ const Wrapper = styled.div `
 
     .colors {
         display: flex;
-        gap: 0.5rem;
     }
 
     .color {
@@ -104,6 +103,7 @@ const Wrapper = styled.div `
         display: grid;
         place-items: center;
         opacity: 0.5;
+        margin-right: 0.5rem;
     }
 
     .active {

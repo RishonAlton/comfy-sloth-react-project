@@ -208,6 +208,7 @@ const Wrapper = styled.article `
         display: inline-block;
         margin: 0;
         margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .color-button {
