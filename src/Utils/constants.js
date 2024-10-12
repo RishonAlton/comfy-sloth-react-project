@@ -46,6 +46,6 @@ export const services = [
 ]
 
 
-export const productsURL = 'https://course-api.com/react-store-products'
+export const productsURL = 'https://www.course-api.com/react-store-products'
 
-export const productInfoURL = `https://course-api.com/react-store-single-product?id=`
+export const productInfoURL = `https://www.course-api.com/react-store-single-product?id=`
